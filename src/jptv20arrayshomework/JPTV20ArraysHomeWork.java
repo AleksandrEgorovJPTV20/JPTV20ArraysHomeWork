@@ -42,22 +42,20 @@ public class JPTV20ArraysHomeWork {
         }
         System.out.println("Минимальное значение: " + min);
 
-//      Среднее
-        
-        int countmax = 0; //кол-во значений максимального
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == max) {
-                countmax++;
-            }
-        }
-        
-        int countmin = 0; //кол-во значений минимального
+        int countmin = 0;
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] == min) {
                 countmin++;
             }
         }
         
+        int countmax = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == max) {
+                countmax++;
+            }
+        }
+       
         int[] newnums = new int[nums.length-(countmin+countmax)];
         Arrays.sort(nums);
         System.arraycopy(nums, countmin, newnums, 0, newnums.length);
