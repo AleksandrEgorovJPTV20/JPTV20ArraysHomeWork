@@ -12,10 +12,10 @@ public class JPTV20ArraysHomeWork {
     public static void main(String[] args) {
         Random random = new Random();
         int count = 0; 
-        int[] nums = new int[10]; //создали массив
+        int[] nums = new int[20]; //создали массив
         
 //      Заполняет массив чётными числами
-        while(count < 10){
+        while(count < 20){
             int a = random.nextInt(100);
             if(a%2 == 0){
                nums[count] = a;
